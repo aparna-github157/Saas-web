@@ -1,0 +1,39 @@
+@import "mixin";
+label{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    &.radio-label{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+}
+input{
+    display: flex;
+    height: 60px;
+    padding: 24px 32px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    outline: 0;
+    &#rememberMe, &#checkTerms{
+        height: auto !important;
+    }
+}
+input{
+    border:2px solid $input-border-blue;
+    @include input-style($input-bg-color, $input-placeholder-color, $input-border-blue);
+    @include input-border-radius(80px);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    &:focus, &:hover{
+        @include input-style($white, $black, $bg-blue-light);
+    }
+}

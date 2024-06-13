@@ -1,0 +1,38 @@
+//Responsiveness
+
+@media (max-width:600px){
+    .left-wrapper {
+        .form-group {
+            .remember-me-wrapper {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+        .social-icons-wrapper {
+            .social-icon-inner {
+                flex-wrap: wrap;
+                .icon-wrap {
+                    border-radius: 8px;
+                    margin: 10% 10%;
+                }
+            }
+        }
+    }
+    .signup-wrapper{
+        .left-wrapper{
+            .form-group{
+                .termsCond-wrapper{
+                    .checkbox-wrapper{
+                        flex-shrink: 1;
+                        align-items: flex-start;
+                        #checkTerms{
+                            height: fit-content;
+                            margin: -21px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}

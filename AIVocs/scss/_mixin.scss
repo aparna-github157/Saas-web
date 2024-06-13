@@ -1,0 +1,26 @@
+@mixin input-style($background, $color, $border){
+    background-color: $background;
+    color:$color;
+    border-color:$border;
+    // &.focus,
+    // &:hover {
+    //     background-color:$background;
+    //     color: $color;
+    //     border-color:$border;
+    // }
+}
+@mixin input-border-radius($value){
+    border-radius: $value;
+}
+
+@mixin button-style-lightTheme($background, $color, $border){
+    background-color: $background;
+    color:$color;
+    border-color:$border;
+    // &.focus,
+    // &:hover {
+    //     background-color:rgba($background, 0);
+    //     color: $color;
+    //     border-color:$border;
+    // }
+}
