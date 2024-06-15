@@ -27,7 +27,7 @@ input{
 input{
     border:2px solid $input-border-blue;
     @include input-style($input-bg-color, $input-placeholder-color, $input-border-blue);
-    @include input-border-radius(80px);
+    @include border-radius(80px);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

@@ -9,7 +9,7 @@
     //     border-color:$border;
     // }
 }
-@mixin input-border-radius($value){
+@mixin border-radius($value){
     border-radius: $value;
 }
 

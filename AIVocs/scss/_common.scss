@@ -15,6 +15,12 @@ body{
   font-weight: 400;
   font-variation-settings:
     "wdth" 100;
+    
+    &.body_dark{
+        background:$darkGray, no-repeat;
+        background: $bodyBg, no-repeat;
+        background-repeat: no-repeat;
+    }
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Helvetica Bold', Arial, Helvetica, sans-serif;
@@ -137,7 +143,7 @@ a{
                 justify-content: space-between;
                 align-items: flex-start;
                 flex-shrink: 0;
-                @include input-border-radius(8px);
+                @include border-radius(8px);
                 margin:0 10%;
                 &.dark-gray-btn{
                     background-color: $grayDark;
@@ -207,3 +213,228 @@ a{
         }
     }
 }
+
+//Home
+.navbar{
+    background:$darkGray;
+    background:$navbarBg;
+    background-repeat: no-repeat;
+    @include border-radius(50px);
+    width: 83% !important;
+    .navbar-nav{
+        .nav-link{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color:$white;
+            &:hover{
+                color:$white;
+            }
+        }
+    }
+}
+
+.button-wrapper-small{
+    width:120px;
+}
+.banner-left{
+    display: flex;
+    width: 100%;
+    padding: 130px 32px 60px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    h1{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+    }
+    p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        color:$lightGray;
+    }
+}
+.button-wrapper-big{
+    width:274px;
+}
+.banner-right{
+    display: flex;
+    padding: 130.659px 13.875px 74.771px 17.078px;
+    justify-content: center;
+    align-items: center;
+    .banner-wrapper{
+        width:500px;
+        img{
+            width:100%;
+            object-fit: cover;
+        }
+    }
+}
+.feature-main{
+    background:$bg-blue;
+    background:$featureBg;
+    background-repeat: no-repeat;
+    .feature-wrapper{
+        display: flex;
+        padding: 58px 50px 80px 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 78px;
+        flex-shrink: 0;
+        .feature-left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            flex-shrink: 0;
+            padding-top: 102px;
+            width:90%;
+            h2{
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            }
+            h4{
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color:$lightGray;
+            }
+            p{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .feature-right{
+            width:500px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.price-wrapper{
+    display: flex;
+    padding: 80px 80px 36px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 69px;
+    flex-shrink: 0;
+    p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color:$lightGray;
+    }
+    .price-block-main{
+        display: flex;
+        padding: 48px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        flex: 1 0 0;
+        align-self: stretch;
+        background: $darkGray;
+        position: relative;
+        @include border-radius(20px);
+        box-shadow:$box-shadow-price-card;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -3px; /* !importanté */
+            border-radius: inherit; /* !importanté */
+            background: $card-border-gradient;
+          }
+          h3{
+            font-size:25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%; /* 33px */
+          }
+          p{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            color:$lightGray;
+          }
+          .price-circle{
+            display: flex;
+            width: 100px;
+            height: 99px;
+            padding: 20px;
+            font-weight: 700;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:0px;
+            border:2px solid $button-primary-dark;
+            box-shadow: $box-shadow-price-circle;
+            @include border-radius(100px);
+            color:$button-primary-dark;
+            sup{
+                font-size: 15px;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                position: absolute;
+                left: 0;
+                top: -12px;
+            }
+            h3{
+                font-size: 34px;
+                font-style: normal;
+                line-height: 44px;
+            }
+            span{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .price-tag{
+                height:39px;
+                margin:auto;
+                position:relative;
+            }
+           
+          }
+          .list-group-numbered>li::before {
+            content: "\f058";
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            background-color:$button-primary-dark;
+            padding:0px 0px;
+            @include border-radius(50px);
+            color:$darkGray;
+            font-weight: 500;
+            text-align: center;
+            font-size: 24px;
+            line-height: normal;
+        }
+        .list-group{
+            display: flex;
+            gap:8px;
+        }
+        &:hover{
+            box-shadow: $box-shadow-price-card-hover;
+        }
+    }
+}
+

@@ -13,3 +13,21 @@ $red:#FF8682;
 
 // Light theme
 $button-primary:#28A745;
+
+
+//Dark Theme 
+$darkGray:#2E2E2E;
+$darkerGray:#1A1A1A;
+$bodyBg:linear-gradient(180deg, $black 0%, $darkGray 100%);
+$button-primary-dark:#FF9800;
+$button-primary-dark-hover:#FFB74D;
+$lightGray:#B3B3B3;
+$navbarBg:linear-gradient(270deg, $darkGray -17.77%, $darkerGray 125.55%);
+$featureBg:linear-gradient(0deg, $bg-blue 42.8%, $darkerGray 100.66%);
+$box-shadow-price-card:0px 0px 36px 0px $bg-blue-light;
+$box-shadow-price-circle:0px -2px 10px 0px $button-primary-dark;
+$card-border-gradient:linear-gradient(to top, $button-primary-dark, $bg-blue-light, $button-primary-dark);
+$box-shadow-price-card-hover:0px 0px 36px 0px $button-primary-dark-hover;
+
+     
+
