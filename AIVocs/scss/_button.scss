@@ -15,6 +15,7 @@
     letter-spacing: 2px;
     @include border-radius(80px);
     border:2px solid $button-primary;
+    transition: all 0.3s ease;
 }
 
 .button-primary{

@@ -41,6 +41,11 @@ footer{
                     border: 2px solid $lightGray;
                     color:$lightGray;
                     background-color: transparent;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        border: 2px solid $white;
+                        background-color: rgba($white,0.1);
+                    }
                 }
             }
             .subscribe-btn{
@@ -54,6 +59,7 @@ footer{
                 border-radius: 50px;
                 top: 6px;
                 border:1px solid $button-primary-dark;
+                transition: all 0.3s ease;
                 &:hover{
                     border:2px solid $button-primary-dark;
                     background-color: transparent;
@@ -94,22 +100,12 @@ footer{
             }
         }
     }
-    .footer-social{
-        display: flex;
-        justify-content: flex-end;
-        .icon-wrap{
-            width:24px;
-            margin: 0 8px;
-            img{
-                width:100%;
-                object-fit: cover;
-            }
-        }
-    }
+    
     .footer-copyright{
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
+    
 }
