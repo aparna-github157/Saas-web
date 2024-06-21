@@ -1,0 +1,34 @@
+.navbar{
+    background:$darkGray;
+    background:$navbarBg;
+    background-repeat: no-repeat;
+    @include border-radius(50px);
+    width: 83% !important;
+    .navbar-brand{
+        width: 130px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 0;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color:$white;
+            transition: all 0.3s ease;
+            &:hover{
+                color:$button-primary-dark;
+            }
+        }
+    }
+}
+
+.button-wrapper-small{
+    width:120px;
+}

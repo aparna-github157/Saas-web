@@ -3,7 +3,7 @@ $general-radius: 10px;
 // $general-max-width: 800px;
 // $general-min-height: 450px;
 
-$mobile-min-height: 450px;
+// $mobile-min-height: 800px;
 
 $image-min-height: 300px;
 
@@ -399,9 +399,8 @@ $nav-arrow-spacing: 10px;
 
 
 // Mobile breakpoints
-@media (max-width: 500px){
+@media (min-width: 500px) and (max-width:1024px){
 	#fifty-fifty-slider-stack-id{
-		min-height: $mobile-min-height;
 		.ffs-nav{
 			width: 100%;
 		}
@@ -425,7 +424,8 @@ $nav-arrow-spacing: 10px;
 			}
 				
 		}
-			
+	}
+	out{
 		&.mobile-nav-top{
 			.ffs-slide{
 				&-content{
@@ -455,8 +455,19 @@ $nav-arrow-spacing: 10px;
 		}
 			
 		}
-			
 	}
-	
+	.price-wrapper .price-block-main {
+		margin-bottom: 30px;
+	}
 }
-	
+@media (min-width: 500px) and (max-width:912px){
+	#fifty-fifty-slider-stack-id{
+		min-height: 400px;
+	}
+}
+
+// @media (max-width:1024){
+// 	#fifty-fifty-slider-stack-id{
+// 		min-height:300px !important;
+// 	}
+// }	
